@@ -62,9 +62,12 @@
         }
 
         .card-img-top {
-            height: 200px;
-            object-fit: cover;
+            height: 250px !important;
+            height: 100%;
+            object-fit: contain;
             filter: grayscale(20%);
+            background-color: #252a30;
+            padding: 10px;
         }
 
         .tech-badge {
@@ -115,13 +118,6 @@
             padding: 50px 0;
         }
 
-        .card-img-top {
-            height: 250px;       /* Keep a consistent height for the card top */
-            object-fit: contain; /* This shows the WHOLE image without cropping */
-            background-color: #252a30; /* Adds a dark background to fill any empty side space */
-            padding: 10px;       /* Optional: adds a little "frame" look */
-        }
-
         .card-body {
             display: flex;
             flex-direction: column;
@@ -156,11 +152,20 @@
             <p class="lead text-muted mx-auto" style="max-width: 700px;">
                 Junior Developer focused on aesthetics, functionality, and clean code. Specialized in Laravel, PHP, and modern Frontend frameworks.
             </p>
-            <div class="mt-4">
+            <!-- <div class="mt-4">
                 <a href="#contact" class="btn btn-accent mr-3">Contact Me</a>
                 <a href="mailto:tunlinkyaw96@gmail.com" class="text-white h4 mx-2"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/tunlinkyaw96" class="text-white h4 mx-2"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/tunlinkyaw/" class="text-white h4 mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tunlinkyaw96" class="text-white h4 mx-2"><i class="fab fa-github"></i></a>                
+            </div> -->
+
+            <div class="mt-4 d-inline-flex align-items-center">
+                <a href="#contact" class="btn btn-accent mr-3">Contact Me</a>
+                <div class="pt-1"> 
+                    <a href="mailto:tunlinkyaw96@gmail.com" class="text-white h4 mx-2"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/tunlinkyaw/" class="text-white h4 mx-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/tunlinkyaw96" class="text-white h4 mx-2"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </header>
@@ -174,41 +179,41 @@
 
                 <div class="col-md-4 mb-5">
                     <div class="card">
-                        <img src="img/p1.jpg" class="card-img-top" alt="Laravel E-Commerce 2">
+                        <img src="img/p1.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
-                            <div class="mb-2">
+                            <div class="mb-3">
                                 <span class="tech-badge">Html</span>
                                 <span class="tech-badge">Bootstrap</span>
                                 <span class="tech-badge">JS</span>
                             </div>
                             <h5 class="card-title text-info">Project 1</h5>
                             <p class="card-text text-muted small">This is <b>a front end project</b>.This project is mainly coded using Bootstrap4. <b>Animate.css,</b> <b>Owl Carousel.js </b>and <b>Scroll revel.js </b>are used for animation.</p>
-                            <a href="http://tunproject.medianewsonline.com/" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
+                            <a href="http://tunproject.medianewsonline.com/" target="blank" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-5">
                     <div class="card">
-                        <img src="img/p2.jpg" class="card-img-top" alt="Laravel E-Commerce 2">
+                        <img src="img/p2.jpg" class="card-img-top" alt="Front End Project 2">
                         <div class="card-body">
-                            <div class="mb-2">
+                            <div class="mb-3">
                                 <span class="tech-badge">Html</span>
                                 <span class="tech-badge">Bootstrap</span>
                                 <span class="tech-badge">JS</span>
                             </div>
                             <h5 class="card-title text-info">Front End Project 2</h5>
                             <p class="card-text">This is a front end project completed in class.This project is mainly coded using Bootstrap4. <b>Animate.css</b> and <b>Scroll revel.js </b>are used for animation.</p>
-                            <a href="http://tunproject.myartsonline.com/" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
+                            <a href="http://tunproject.myartsonline.com/" target="blank" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4 mb-5">
                     <div class="card">
-                        <img src="img/p3.jpg" class="card-img-top" alt="Laravel E-Commerce 2">
+                        <img src="img/p3.jpg" class="card-img-top" alt="Back End Project 1">
                         <div class="card-body">
-                            <div class="mb-2">
+                            <div class="mb-3">
                                 <span class="tech-badge">Html</span>
                                 <span class="tech-badge">Bootstrap</span>
                                 <span class="tech-badge">JS</span>
@@ -218,16 +223,16 @@
                             <p class="card-text" style="font-size: 14px;">This is <b>a backend project</b> using PHP.This project works as an E-commerence Site.We can <b>Login,Register,Buy,Cart and check our orders</b>.Admin role is separated for <b>managing stocks,orders and categories</b>.For Admin role,use username: <b>tunlinkyaw@gmail.com</b>
                                 and password: <b>123</b> for login!
                             </p>
-                            <a href="http://tunproject.mygamesonline.org/" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
+                            <a href="http://tunproject.mygamesonline.org/" target="blank" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-5">
                     <div class="card">
-                        <img src="img/p4.jpg" class="card-img-top" alt="Laravel E-Commerce 2">
+                        <img src="img/p4.jpg" class="card-img-top" alt="Laravel Project 1">
                         <div class="card-body">
-                            <div class="mb-2">
+                            <div class="mb-3">
                                 <span class="tech-badge">Html</span>
                                 <span class="tech-badge">Bootstrap</span>
                                 <span class="tech-badge">JS</span>
@@ -235,19 +240,19 @@
                                 <span class="tech-badge">Laravel</span>
                             </div>
                             <h5 class="card-title text-info">Laravel Project 1</h5>
-                            <p class="card-text">This is a <b>laravel project</b>.This project works as a movie discussion forum.We can <b>Login,Register,Create,Edit,Delete post,Search,Filter by category and Comment Post</b>.Admin role is separated for <b>managing users,roles and deleted posts</b>.For Admin role,use username: <b>tunlinkyaw@gmail.com</b>
+                            <p class="card-text">This is a <b>laravel project</b>. This project works as a movie discussion forum. We can <b>Login, Register, Create, Edit, Delete post, Search, Filter by category and Comment Post</b>. Admin role is separated for <b>managing users, roles and deleted posts</b>.For Admin role, use username: <b>tunlinkyaw@gmail.com</b>
                                 and password: <b>password</b> for login! <b>Notice!!!</b> This website collects <b>IP Addresses!!!</b>
                             </p>
-                            <a href="http://tunproject.medianewsonline.com/" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
+                            <a href="http://tunproject.medianewsonline.com/" target="blank" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-5">
                     <div class="card">
-                        <img src="img/p5.jpg" class="card-img-top" alt="Laravel E-Commerce 2">
+                        <img src="img/p5.jpg" class="card-img-top" alt="Laravel Project 2">
                         <div class="card-body">
-                            <div class="mb-2">
+                            <div class="mb-3">
                                 <span class="tech-badge">Html</span>
                                 <span class="tech-badge">Bootstrap</span>
                                 <span class="tech-badge">JS</span>
@@ -256,14 +261,29 @@
                             </div>
                             <h5 class="card-title text-info">Laravel Project 2</h5>
                             <p class="card-text">This is <b>a backend PHP project</b> using a <b>laravel framework</b>. This project works as an E-commerence Site. We can 
-                                <b>Create New Account, Login, Edit Our Profile in Dashboard, Change Password, Add to Cart, Add to favorites, Buy the items, and check our orders</b>.
+                                <b>Create New Account, Login, Edit Our Profile in Dashboard, Change Password, Search, Add to Cart, Add to favorites, Buy the items, and check our orders</b>.
                             </p>
-                            <a href="https://tunecommerceproject.atwebpages.com/products" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
+                            <a href="http://tunecommerceproject.atwebpages.com/products" target="blank" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">View Project</a>
                         </div>
                     </div>
                 </div>
-                
 
+                <div class="col-md-4 mb-5">
+                    <div class="card">
+                        <img src="img/p6.jpg" class="card-img-top" alt="Laravel Project 2">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="tech-badge">Unity</span>
+                                <span class="tech-badge">C#</span>
+                            </div>
+                            <h5 class="card-title text-info">Game Development Project</h5>
+                            <p class="card-text">This is <b>a Unity Game Development Project</b> for the class. This project is created as a shooting game. We can 
+                                <b>Shoot the enemy, Refill Blood by taking Red Boxes</b> while wondering in the forest. Please download the recorded game play demo video for the reference.
+                            </p>
+                            <a href="https://def1.pcloud.com/cBZltNIPUZNG3QRW7ZZZldhG0kZ2ZZzE5ZkZqxHMuZ6TZrFZ54ZIQZjmZBLZGLZNTZhYZPmZVQZXYZzYZzFZlDml5ZI58LuMNv3HXdm2jq2HV3hjO9mhFV/Final%20Project%20video.mkv" class="btn btn-sm btn-outline-light mt-2 mt-auto-btn">Download Recorded Demo</a>
+                        </div>
+                    </div>
+                </div>               
 
             </div>
         </div>
@@ -292,14 +312,14 @@
             <h2 class="mb-4">Get In Touch</h2>
             <p class="text-muted mb-4">Let's connect and build something impactful.</p>
             <div>
-                <!-- <a href="mailto:tunlinkyaw96@gmail.com" class="btn btn-outline-light mx-2">
+                <a href="mailto:tunlinkyaw96@gmail.com" class="btn btn-outline-light mx-2">
                     <i class="fas fa-envelope mr-2"></i> Email
-                </a> -->
+                </a>
                 <a href="https://www.linkedin.com/in/tunlinkyaw/" class="btn btn-outline-light mx-2">
                     <i class="fab fa-linkedin mr-2"></i> LinkedIn
                 </a>
                 <a href="https://github.com/tunlinkyaw96" class="btn btn-outline-light mx-2">
-                    <i class="fab fa-github mr-2"></i> Github
+                    <i class="fab fa-github"></i>                
                 </a>
             </div>
             <p class="mt-5 text-muted small">&copy; 2026 Tun Lin Kyaw</p>
